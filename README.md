@@ -34,7 +34,14 @@ This file is loaded by `cypress.config.js` and used in the login script.
 
 ```bash
 cd C:\SathReact\sathcypress
-npx cypress run --spec "cypress/e2e/login.cy.js"
+npx cypress run --spec "cypress/e2e/e2e_login.cy.js"
+```
+
+### Run the inventory assertions spec headlessly
+
+```bash
+cd C:\SathReact\sathcypress
+npx cypress run --spec "cypress/e2e/e2e_inventory_assertions.cy.js"
 ```
 
 ### Run all Cypress tests headlessly
@@ -51,7 +58,7 @@ cd C:\SathReact\sathcypress
 npx cypress open
 ```
 
-Then select `login.cy.js`, `e2e_checkout_flow.cy.js`, or any spec in the Cypress UI.
+Then select `e2e_login.cy.js`, `e2e_checkout_flow.cy.js`, or any spec in the Cypress UI.
 
 ## NPM scripts
 
@@ -60,6 +67,9 @@ The following scripts are defined in `package.json`:
 - `npm run cypress:open` — open the interactive Cypress Test Runner
 - `npm run cypress:run` — run all specs headlessly
 - `npm run test:e2e` — run the login spec headlessly
+- `npm run test:checkout` — run the checkout flow spec headlessly
+- `npm run test:reset` — run the reset flow spec headlessly
+- `npm run test:inventory` — run the inventory assertions spec headlessly
 
 ## Notes
 

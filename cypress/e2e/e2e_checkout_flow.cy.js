@@ -34,5 +34,6 @@ describe('Sauce Demo checkout flow', () => {
     cy.url().should('include', '/checkout-complete.html');
     cy.get('img[alt="Pony Express"]').should('be.visible');
     cy.contains(/thank you for your order/i).should('be.visible');
+    cy.logout();
   });
 });
