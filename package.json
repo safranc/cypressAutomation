@@ -1,0 +1,15 @@
+{
+  "name": "sathcypress",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run --spec \"cypress/e2e/login.cy.js\"",
+    "test:checkout": "cypress run --spec \"cypress/e2e/e2e_checkout_flow.cy.js\""
+  },
+  "devDependencies": {
+    "cypress": "^15.17.0",
+    "dotenv": "^17.4.2"
+  }
+}
