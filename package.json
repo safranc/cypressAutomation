@@ -8,7 +8,10 @@
     "test:e2e": "cypress run --spec \"cypress/e2e/e2e_login.cy.js\"",
     "test:checkout": "cypress run --spec \"cypress/e2e/e2e_checkout_flow.cy.js\"",
     "test:reset": "cypress run --spec \"cypress/e2e/e2e_reset_flow.cy.js\"",
-    "test:inventory": "cypress run --spec \"cypress/e2e/e2e_inventory_assertions.cy.js\""
+    "test:inventory": "cypress run --spec \"cypress/e2e/e2e_inventory_assertions.cy.js\"",
+    "test:wordpress-login": "cypress run --spec \"cypress/e2e/wordpress/wordpress_login.cy.js\"",
+    "test:wordpress-news": "cypress run --spec \"cypress/e2e/wordpress/wordpress_news_daily.cy.js\"",
+    "test:wordpress-subscribe": "cypress run --spec \"cypress/e2e/wordpress/wordpress_news_daily_subscribe.cy.js\""
   },
   "devDependencies": {
     "cypress": "^15.17.0",
