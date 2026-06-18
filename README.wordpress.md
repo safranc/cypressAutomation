@@ -42,6 +42,7 @@ The WordPress test files are located in:
 - `cypress/e2e/wordpress/wordpress_login.cy.js`
 - `cypress/e2e/wordpress/wordpress_news_daily.cy.js`
 - `cypress/e2e/wordpress/wordpress_news_daily_subscribe.cy.js`
+- `cypress/e2e/wordpress/wordpress_api.cy.js`
 
 ## How to run the tests
 
@@ -68,6 +69,12 @@ npm run test:wordpress-news
 
 ```bash
 npm run test:wordpress-subscribe
+```
+
+### Run the WordPress API validation test
+
+```bash
+npm run test:wordpress-api
 ```
 
 ### Run all Cypress tests headlessly
