@@ -36,4 +36,22 @@ describe('Sauce Demo checkout flow', () => {
     cy.contains(/thank you for your order/i).should('be.visible');
     cy.logout();
   });
+
+  it('shows a validation error when postal code is missing during checkout', () => {
+    cy.login(checkoutUser.id);
+
+    cy.get('.inventory_item').should('have.length.at.least', 1);
+    cy.get('.inventory_item').eq(0).find('button').contains(/add to cart/i).click();
+
+    cy.get('.shopping_cart_link').click();
+    cy.get('[data-test="checkout"]').click();
+
+    cy.get('[data-test="firstName"]').type(checkoutUser.firstName);
+    cy.get('[data-test="lastName"]').type(checkoutUser.lastName);
+    cy.get('[data-test="continue"]').click();
+
+    cy.url().should('include', '/checkout-step-one.html');
+    cy.contains(/error|required/i).should('be.visible');
+    cy.logout();
+  });
 });
