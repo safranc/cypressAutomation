@@ -21,6 +21,10 @@ When a Jira ticket is provided, follow this sequence:
 - Keep tests readable, deterministic, and data-driven where possible.
 - Use environment values from .env or Cypress config instead of hardcoding secrets.
 - Prefer small, focused test cases that map directly to acceptance criteria.
+- Base every scenario on evidence from the ticket, code, UI, API docs, or existing tests; do not invent unsupported behavior.
+- Add a confidence score to each generated scenario and mark low-confidence ideas for review instead of auto-accepting them.
+- Actively look for edge cases beyond happy paths, including validation errors, boundary values, state changes, and failure scenarios.
+- Use a reviewer step: after drafting scenarios, check if they truly cover the acceptance criteria and whether any assumptions need confirmation.
 - When a test fails, report the actual error and suggest the minimal root-cause fix.
 - Do not claim completion without running the relevant Cypress command and reporting the result.
 
