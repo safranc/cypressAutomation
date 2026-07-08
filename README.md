@@ -71,6 +71,20 @@ The following scripts are defined in `package.json`:
 - `npm run test:reset` — run the reset flow spec headlessly
 - `npm run test:inventory` — run the inventory assertions spec headlessly
 
+## Copilot agent workflow
+
+This workspace includes a project-level Copilot setup for Jira-driven QA automation:
+
+- [.github/copilot-instructions.md](.github/copilot-instructions.md) defines the default workflow for ticket-based Cypress work.
+- [.github/prompts/qa-ticket-workflow.prompt.md](.github/prompts/qa-ticket-workflow.prompt.md) provides a reusable prompt for QA automation tasks.
+- [.github/agents/sathcypress-qa.agent.md](.github/agents/sathcypress-qa.agent.md) defines a dedicated agent for reading tickets, creating test scenarios, updating Cypress tests, running verification, and preparing defect follow-up.
+
+To use it, open Copilot Chat in this workspace and ask for the ticket-based workflow, for example:
+
+```text
+Use the sathcypress-qa agent for Jira ticket KAN-1 and create the relevant Cypress scenarios.
+```
+
 ## Notes
 
 - The login command is defined in `cypress/support/commands.js`.
