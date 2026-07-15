@@ -12,7 +12,9 @@
     "test:wordpress-login": "cypress run --spec \"cypress/e2e/wordpress/wordpress_login.cy.js\"",
     "test:wordpress-news": "cypress run --spec \"cypress/e2e/wordpress/wordpress_news_daily.cy.js\"",
     "test:wordpress-subscribe": "cypress run --spec \"cypress/e2e/wordpress/wordpress_news_daily_subscribe.cy.js\"",
-    "test:wordpress-api": "cypress run --spec \"cypress/e2e/wordpress/wordpress_api.cy.js\""
+    "test:wordpress-api": "cypress run --spec \"cypress/e2e/wordpress/wordpress_api.cy.js\"",
+    "rag:context": "node scripts/rag-context.js",
+    "llm:eval": "node scripts/llm-eval.js"
   },
   "devDependencies": {
     "cypress": "^15.17.0",

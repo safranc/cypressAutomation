@@ -1,0 +1,26 @@
+[
+  {
+    "id": "login-flow",
+    "category": "accuracy",
+    "prompt": "Which Cypress spec covers the login flow?",
+    "expected": ["e2e_login.cy.js", "login"],
+    "required": ["e2e_login.cy.js"],
+    "minWords": 5
+  },
+  {
+    "id": "rag-command",
+    "category": "relevance",
+    "prompt": "How do I run the RAG context script in this project?",
+    "expected": ["rag:context", "scripts/rag-context.js"],
+    "required": ["rag:context"],
+    "minWords": 6
+  },
+  {
+    "id": "checkout-flow",
+    "category": "accuracy",
+    "prompt": "Which Cypress spec covers the checkout flow?",
+    "expected": ["e2e_checkout_flow.cy.js", "checkout"],
+    "required": ["e2e_checkout_flow.cy.js"],
+    "minWords": 5
+  }
+]
