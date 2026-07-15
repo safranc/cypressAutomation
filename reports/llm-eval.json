@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "totalCases": 3,
+    "passedCases": 3,
+    "averageOverall": 0.9444444444444445,
+    "provider": "local",
+    "generatedAt": "2026-07-13T17:47:47.114Z"
+  },
+  "results": [
+    {
+      "id": "login-file",
+      "question": "Which Cypress spec covers the login flow?",
+      "answer": "The login flow is covered by cypress/e2e/e2e_login.cy.js.",
+      "metrics": {
+        "accuracy": 1,
+        "completeness": 1,
+        "format": 1,
+        "overall": 1
+      },
+      "passed": true
+    },
+    {
+      "id": "rag-command",
+      "question": "How do I run the RAG context script in this project?",
+      "answer": "Run npm run rag:context with a query such as npm run rag:context \"checkout\".",
+      "metrics": {
+        "accuracy": 1,
+        "completeness": 0.5,
+        "format": 1,
+        "overall": 0.8333333333333334
+      },
+      "passed": true
+    },
+    {
+      "id": "checkout-spec",
+      "question": "Which Cypress spec covers the checkout flow?",
+      "answer": "The checkout flow is covered by cypress/e2e/e2e_checkout_flow.cy.js.",
+      "metrics": {
+        "accuracy": 1,
+        "completeness": 1,
+        "format": 1,
+        "overall": 1
+      },
+      "passed": true
+    }
+  ]
+}
